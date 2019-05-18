@@ -1,0 +1,9 @@
+
+# adding by inclusion
+*
+
+!.gitignore
+
+# !alacritty
+!alacritty
+!alacritty/**/*
