@@ -1,0 +1,3 @@
+[submodule "nvim/pack/plugins/start/nerdtree"]
+	path = nvim/pack/plugins/start/nerdtree
+	url = git@github.com:scrooloose/nerdtree.git
