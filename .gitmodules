@@ -1,3 +1,12 @@
 [submodule "nvim/pack/plugins/start/nerdtree"]
 	path = nvim/pack/plugins/start/nerdtree
 	url = git@github.com:scrooloose/nerdtree.git
+[submodule "nvim/pack/plugins/start/nerdtree-git-plugin"]
+	path = nvim/pack/plugins/start/nerdtree-git-plugin
+	url = git@github.com:Xuyuanp/nerdtree-git-plugin.git
+[submodule "nvim/pack/plugins/start/vim-devicons"]
+	path = nvim/pack/plugins/start/vim-devicons
+	url = git@github.com:ryanoasis/vim-devicons.git
+[submodule "nvim/pack/plugins/start/vim-nerdtree-syntax-highlight"]
+	path = nvim/pack/plugins/start/vim-nerdtree-syntax-highlight
+	url = https://github.com/tiagofumo/vim-nerdtree-syntax-highlight
