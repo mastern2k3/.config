@@ -22,3 +22,6 @@ if has('folding')
 	set foldlevelstart=99
 	set foldtext=FoldText()
 endif
+
+set ignorecase
+set smartcase
