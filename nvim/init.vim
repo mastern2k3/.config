@@ -23,5 +23,8 @@ if has('folding')
 	set foldtext=FoldText()
 endif
 
+" ignore case on defaut `/` searches
 set ignorecase
 set smartcase
+
+colorscheme nord

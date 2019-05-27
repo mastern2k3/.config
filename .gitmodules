@@ -10,3 +10,15 @@
 [submodule "nvim/pack/plugins/start/vim-nerdtree-syntax-highlight"]
 	path = nvim/pack/plugins/start/vim-nerdtree-syntax-highlight
 	url = https://github.com/tiagofumo/vim-nerdtree-syntax-highlight
+[submodule "nvim/pack/plugins/start/rust.vim"]
+	path = nvim/pack/plugins/start/rust.vim
+	url = git@github.com:rust-lang/rust.vim.git
+[submodule "nvim/pack/plugins/start/vim-racer"]
+	path = nvim/pack/plugins/start/vim-racer
+	url = git@github.com:racer-rust/vim-racer.git
+[submodule "nvim/pack/plugins/start/indentLine"]
+	path = nvim/pack/plugins/start/indentLine
+	url = git@github.com:Yggdroot/indentLine.git
+[submodule "nvim/pack/plugins/start/nord-vim"]
+	path = nvim/pack/plugins/start/nord-vim
+	url = git@github.com:arcticicestudio/nord-vim.git
