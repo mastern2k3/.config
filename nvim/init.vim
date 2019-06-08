@@ -27,4 +27,7 @@ endif
 set ignorecase
 set smartcase
 
+" english lol
+set spell spelllang=en_us
+
 colorscheme nord
