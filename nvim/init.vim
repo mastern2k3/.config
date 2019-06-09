@@ -91,6 +91,9 @@ if has('folding')
 	set foldtext=FoldText()
 endif
 
+" Plugins
+filetype plugin indent on
+
 " ignore case on defaut `/` searches
 set ignorecase
 set smartcase
