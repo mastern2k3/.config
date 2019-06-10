@@ -4,7 +4,7 @@ set encoding=utf-8
 " Tabs and Indents {{{
 " ----------------
 set textwidth=80    " Text width maximum chars before wrapping
-set noexpandtab     " Don't expand tabs to spaces.
+set expandtab     " Don't expand tabs to spaces.
 set tabstop=2       " The number of spaces a tab is
 set softtabstop=2   " While performing editing operations
 set smarttab        " Tab insert blanks according to 'shiftwidth'
@@ -90,6 +90,9 @@ if has('folding')
 	set foldlevelstart=99
 	set foldtext=FoldText()
 endif
+
+" Bindings
+map <C-n> :NERDTreeToggle<CR>
 
 " Plugins
 filetype plugin indent on
