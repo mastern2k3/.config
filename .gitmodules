@@ -22,3 +22,6 @@
 [submodule "nvim/pack/plugins/start/nord-vim"]
 	path = nvim/pack/plugins/start/nord-vim
 	url = git@github.com:arcticicestudio/nord-vim.git
+[submodule "nvim/pack/plugins/start/vim-vue"]
+	path = nvim/pack/plugins/start/vim-vue
+	url = git@github.com:posva/vim-vue.git
