@@ -16,3 +16,6 @@
 
 !mypath
 !mypath/**/*
+
+!bat
+!bat/**/*
