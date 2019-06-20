@@ -31,3 +31,6 @@
 [submodule "nvim/pack/plugins/start/ctrlp.vim"]
 	path = nvim/pack/plugins/start/ctrlp.vim
 	url = git@github.com:ctrlpvim/ctrlp.vim.git
+[submodule "nvim/pack/plugins/start/ack.vim"]
+	path = nvim/pack/plugins/start/ack.vim
+	url = git@github.com:mileszs/ack.vim.git

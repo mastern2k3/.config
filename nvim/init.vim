@@ -81,6 +81,11 @@ if has('conceal') && v:version >= 703
 	set conceallevel=2 concealcursor=niv
 endif
 
+" Use ag instead of ack
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
+
 " }}}
 " Folds {{{
 " -----
