@@ -25,3 +25,6 @@
 [submodule "nvim/pack/plugins/start/vim-vue"]
 	path = nvim/pack/plugins/start/vim-vue
 	url = git@github.com:posva/vim-vue.git
+[submodule "nvim/pack/plugins/start/vim-go"]
+	path = nvim/pack/plugins/start/vim-go
+	url = https://github.com/fatih/vim-go.git
