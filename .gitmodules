@@ -28,3 +28,6 @@
 [submodule "nvim/pack/plugins/start/vim-go"]
 	path = nvim/pack/plugins/start/vim-go
 	url = https://github.com/fatih/vim-go.git
+[submodule "nvim/pack/plugins/start/ctrlp.vim"]
+	path = nvim/pack/plugins/start/ctrlp.vim
+	url = git@github.com:ctrlpvim/ctrlp.vim.git
