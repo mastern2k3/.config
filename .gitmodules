@@ -34,3 +34,6 @@
 [submodule "nvim/pack/plugins/start/ack.vim"]
 	path = nvim/pack/plugins/start/ack.vim
 	url = git@github.com:mileszs/ack.vim.git
+[submodule "nvim/pack/plugins/start/auto-pairs"]
+	path = nvim/pack/plugins/start/auto-pairs
+	url = git@github.com:jiangmiao/auto-pairs.git
