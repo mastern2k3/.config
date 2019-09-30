@@ -20,6 +20,10 @@
 !bat
 !bat/**/*
 
+!Code
+!Code/User
+!Code/User/settings.json
+
 *.spl
 *.sug
 
