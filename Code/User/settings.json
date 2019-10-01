@@ -1,7 +1,9 @@
 {
+    "telemetry.enableCrashReporter": true,
+    "telemetry.enableTelemetry": false,
     "workbench.colorTheme": "Nord",
     "window.zoomLevel": 1,
-    "breadcrumbs.enabled": true,
+    "breadcrumbs.enabled": false,
     "window.titleBarStyle": "custom",
     "cSpell.userWords": [
         "a",
@@ -80,5 +82,8 @@
     "gitlens.views.compare.location": "gitlens",
     "gitlens.views.search.location": "gitlens",
     "python.jediEnabled": false,
+    "editor.fontFamily": "'Fira Code Retina', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontLigatures": true,
     "editor.renderWhitespace": "all",
+    "diffEditor.ignoreTrimWhitespace": false,
 }
