@@ -17,6 +17,9 @@
 !mypath
 !mypath/**/*
 
+!htop
+!htop/**/*
+
 !bat
 !bat/**/*
 
