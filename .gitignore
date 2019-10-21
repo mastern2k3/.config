@@ -27,6 +27,8 @@
 !Code/User
 !Code/User/settings.json
 
+!VSCodium
+
 *.spl
 *.sug
 
