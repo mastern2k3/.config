@@ -86,4 +86,8 @@
     "editor.fontLigatures": true,
     "editor.renderWhitespace": "all",
     "diffEditor.ignoreTrimWhitespace": false,
+    "markdown-preview-enhanced.frontMatterRenderingOption": "code block",
+    "markdown-preview-enhanced.previewTheme": "github-dark.css",
+    "markdown-preview-enhanced.revealjsTheme": "league.css",
+    "markdown-preview-enhanced.mermaidTheme": "default",
 }

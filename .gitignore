@@ -17,12 +17,17 @@
 !mypath
 !mypath/**/*
 
+!htop
+!htop/**/*
+
 !bat
 !bat/**/*
 
 !Code
 !Code/User
 !Code/User/settings.json
+
+!VSCodium
 
 *.spl
 *.sug
