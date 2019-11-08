@@ -23,6 +23,9 @@
 !bat
 !bat/**/*
 
+!tmux
+!tmux/**/*
+
 !Code
 !Code/User
 !Code/User/settings.json

@@ -37,3 +37,6 @@
 [submodule "nvim/pack/plugins/start/auto-pairs"]
 	path = nvim/pack/plugins/start/auto-pairs
 	url = git@github.com:jiangmiao/auto-pairs.git
+[submodule "tmux/.tmux"]
+	path = tmux/.tmux
+	url = git@github.com:gpakosz/.tmux.git
