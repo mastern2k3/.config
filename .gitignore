@@ -4,7 +4,8 @@
 
 !.gitignore
 
-# !alacritty
+!Makefile
+
 !alacritty
 !alacritty/**/*
 
@@ -29,6 +30,9 @@
 !Code
 !Code/User
 !Code/User/settings.json
+
+!zsh
+!zsh/**/*
 
 !VSCodium
 
