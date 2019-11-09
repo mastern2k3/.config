@@ -4,8 +4,8 @@ install: install-zsh install-fonts install-alacritty install-tmux install-misc
 
 install-misc:
 	apt install neofetch
-	wget https://github.com/smallhadroncollider/taskell/releases/download/1.7.1/taskell-1.7.1_x86-64-linux.deb
-	apt install ./taskell-1.7.1_x86-64-linux.deb
+	wget -P $HOME/Downloads https://github.com/smallhadroncollider/taskell/releases/download/1.7.1/taskell-1.7.1_x86-64-linux.deb
+	apt install $HOME/Downloads/taskell-1.7.1_x86-64-linux.deb
 
 install-zsh:
 	apt install zsh
