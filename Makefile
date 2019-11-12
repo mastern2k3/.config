@@ -5,10 +5,13 @@ VERSION_TASKELL := 1.7.1
 
 ADD_APT_REPO := sudo add-apt-repository -y
 
-install: install-neovim install-exa install-zsh install-fonts install-alacritty install-tmux install-misc
+install: home-projects install-neovim install-exa install-zsh install-fonts install-alacritty install-tmux install-misc
 
 home-bin:
 	mkdir -p $(HOME)/bin
+
+home-projects:
+	mkdir -p $(HOME)/Projects
 
 install-lazygit:
 	$(ADD_APT_REPO) ppa:lazygit-team/release
