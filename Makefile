@@ -3,13 +3,20 @@ DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 VERSION_EXA     := 0.9.0
 VERSION_TASKELL := 1.7.1
 
+ADD_APT_REPO := sudo add-apt-repository -y
+
 install: install-neovim install-exa install-zsh install-fonts install-alacritty install-tmux install-misc
 
 home-bin:
 	mkdir -p $(HOME)/bin
 
+install-lazygit:
+	$(ADD_APT_REPO) ppa:lazygit-team/release
+	sudo apt-get update
+	sudo apt-get install lazygit
+
 install-neovim:
-	sudo add-apt-repository -y ppa:neovim-ppa/stable
+	$(ADD_APT_REPO) ppa:neovim-ppa/stable
 	sudo apt-get update
 	sudo apt-get install neovim
 
@@ -34,7 +41,7 @@ install-fonts:
 	apt install fonts-firacode
 
 install-alacritty: install-fonts
-	sudo add-apt-repository -y ppa:mmstick76/alacritty
+	$(ADD_APT_REPO) ppa:mmstick76/alacritty
 	apt update
 	apt install alacritty
 
