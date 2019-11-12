@@ -109,12 +109,11 @@ ZSH_CUSTOM=$zshrcloc/zsh_custom
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
-#  git-prompt
-  golang
-  taskbook
-  web-search
-  zsh-syntax-highlighting
+    git
+    z
+    golang
+    web-search
+    zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
