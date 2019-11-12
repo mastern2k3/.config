@@ -45,3 +45,5 @@ install-vscodium:
 	echo 'deb https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/repos/debs/ vscodium main' | sudo tee --append /etc/apt/sources.list.d/vscodium.list
 	apt update
 	apt install codium
+	codium --install-extension arcticicestudio.nord-visual-studio-code
+	codium --install-extension yzhang.markdown-all-in-one
