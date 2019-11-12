@@ -3,10 +3,15 @@ DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 VERSION_EXA     := 0.9.0
 VERSION_TASKELL := 1.7.1
 
-install: install-zsh install-fonts install-alacritty install-tmux install-misc
+install: install-neovim install-exa install-zsh install-fonts install-alacritty install-tmux install-misc
 
 home-bin:
 	mkdir -p $(HOME)/bin
+
+install-neovim:
+	sudo add-apt-repository -y ppa:neovim-ppa/stable
+	sudo apt-get update
+	sudo apt-get install neovim
 
 install-exa: home-bin
 	wget -P $(HOME)/Downloads https://github.com/ogham/exa/releases/download/v$(VERSION_EXA)/exa-linux-x86_64-$(VERSION_EXA).zip
@@ -29,7 +34,7 @@ install-fonts:
 	apt install fonts-firacode
 
 install-alacritty: install-fonts
-	sudo add-apt-repository ppa:mmstick76/alacritty
+	sudo add-apt-repository -y ppa:mmstick76/alacritty
 	apt update
 	apt install alacritty
 
