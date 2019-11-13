@@ -156,6 +156,11 @@ if [ -f '/home/nitzan/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '/
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/nitzan/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '/home/nitzan/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 
+# use codium instead of vscode if exists
+if command -v codium >/dev/null; then
+    alias code=codium
+fi
+
 # additional git aliases
 alias glon='glola --author-date-order'
 alias gg="git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --all --author-date-order"
