@@ -2,9 +2,10 @@ DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 
 DOWNLOADS := $(HOME)/Downloads
 
-VERSION_EXA     := 0.9.0
-VERSION_TASKELL := 1.7.1
-VERSION_BAT     := 0.12.1
+VERSION_EXA            := 0.9.0
+VERSION_TASKELL        := 1.7.1
+VERSION_BAT            := 0.12.1
+VERSION_DOCKER_COMPOSE := 1.24.1
 
 APT_ADD_REPO := sudo add-apt-repository -y
 APT_UPDATE   := sudo apt update
@@ -73,3 +74,9 @@ install-vscodium:
 	$(APT_INSTALL) codium
 	codium --install-extension arcticicestudio.nord-visual-studio-code
 	codium --install-extension yzhang.markdown-all-in-one
+
+install-docker:
+	$(APT_INSTALL) docker.io
+	sudo usermod -aG docker $(USER)
+	sudo curl -L "https://github.com/docker/compose/releases/download/$(VERSION_DOCKER_COMPOSE)/docker-compose-$$(uname -s)-$$(uname -m)" -o /usr/local/bin/docker-compose
+	sudo chmod +x /usr/local/bin/docker-compose
