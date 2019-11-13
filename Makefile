@@ -4,12 +4,13 @@ DOWNLOADS := $(HOME)/Downloads
 
 VERSION_EXA     := 0.9.0
 VERSION_TASKELL := 1.7.1
+VERSION_BAT     := 0.12.1
 
 APT_ADD_REPO := sudo add-apt-repository -y
 APT_UPDATE   := sudo apt update
 APT_INSTALL  := sudo apt install
 
-install: home-projects install-neovim install-exa install-zsh install-fonts install-alacritty install-tmux install-misc
+install: home-projects install-neovim install-bat install-exa install-zsh install-fonts install-alacritty install-tmux install-misc
 
 home-bin:
 	mkdir -p $(HOME)/bin
@@ -32,7 +33,13 @@ install-exa: home-bin
 	unzip -o $(DOWNLOADS)/exa-linux-x86_64-$(VERSION_EXA).zip exa-linux-x86_64 -d $(DOWNLOADS)
 	mv $(DOWNLOADS)/exa-linux-x86_64 $(HOME)/bin/exa
 
+install-bat:
+	wget -P $(DOWNLOADS) https://github.com/sharkdp/bat/releases/download/v$(VERSION_BAT)/bat_$(VERSION_BAT)_amd64.deb
+	$(APT_INSTALL) $(DOWNLOADS)/bat_$(VERSION_BAT)_amd64.deb
+
 install-misc:
+	$(APT_INSTALL) htop
+	$(APT_INSTALL) httpie
 	$(APT_INSTALL) neofetch
 	wget -P $(DOWNLOADS) https://github.com/smallhadroncollider/taskell/releases/download/$(VERSION_TASKELL)/taskell-$(VERSION_TASKELL)_x86-64-linux.deb
 	$(APT_INSTALL) $(DOWNLOADS)/taskell-$(VERSION_TASKELL)_x86-64-linux.deb
