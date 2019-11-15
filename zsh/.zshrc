@@ -180,6 +180,7 @@ alias pls=sudo
 alias wch='watch -n 1'
 alias hig='history | grep'
 alias gitnitz='git config user.email "nitzan.zada@gmail.com" && git config user.name "Nitzan Zada"'
+alias gitnitzhalo='git config user.email "nitzan@halo-digital.com" && git config user.name "Nitzan Zada"'
 alias gomtm='git fetch . origin/master:master'
 alias ynk='yank-cli -- xsel -b'
 alias ynkk=yank-cli

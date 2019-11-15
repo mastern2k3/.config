@@ -302,8 +302,7 @@ live_config_reload: true
 #   - (Windows) powershell
 shell:
   program: /usr/bin/tmux
-  args:
-    - -u
+  args: [ -u, new-session, -A, -s, dev ]
 
 # Windows 10 ConPTY backend (Windows only)
 #

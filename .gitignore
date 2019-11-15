@@ -40,6 +40,8 @@
 !jesseduffield/lazygit
 !jesseduffield/lazygit/config.yml
 
+!omf
+!omf/**/*
+
 *.spl
 *.sug
-
