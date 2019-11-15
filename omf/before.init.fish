@@ -108,6 +108,11 @@ alias rmr='rm -r'
 # disable python venv "(venv)" prompt since agnoster
 set VIRTUAL_ENV_DISABLE_PROMPT 1
 
+# adaptation so tmux will display current dir as title
+function fish_title
+    printf '\ek%s\e\\' (status current-command) (prompt_pwd)
+end
+
 # display neofetch output instead of normal fish greeting
 function fish_greeting
   neofetch
