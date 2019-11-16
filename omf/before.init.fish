@@ -108,6 +108,10 @@ alias tmux='tmux -u'
 alias vi='nvim'
 alias rmr='rm -r'
 
+function take
+  mkdir -p $argv && cd $argv
+end
+
 # disable python venv "(venv)" prompt since agnoster
 set VIRTUAL_ENV_DISABLE_PROMPT 1
 
