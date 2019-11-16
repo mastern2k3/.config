@@ -78,6 +78,9 @@ alias glon='glola --author-date-order'
 alias gg="git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --all --author-date-order"
 alias gpump='git push --set-upstream git@gitlab.com:nitzan.zada/(git rev-parse --show-toplevel | xargs basename).git (git rev-parse --abbrev-ref HEAD) && git remote add origin git@gitlab.com:nitzan.zada/(git rev-parse --show-toplevel | xargs basename).git && git fetch --all'
 
+alias ggpull='git pull origin (git rev-parse --abbrev-ref HEAD)'
+alias ggpush='git push origin (git rev-parse --abbrev-ref HEAD)'
+
 # bookmarks
 alias ttom='open_command https://trello.com/b/SbyBrJxQ'
 alias tid='open_command https://trello.com/b/tZaiZ8ln/ideas'
