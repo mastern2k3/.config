@@ -45,6 +45,13 @@ install-misc:
 	wget -P $(DOWNLOADS) https://github.com/smallhadroncollider/taskell/releases/download/$(VERSION_TASKELL)/taskell-$(VERSION_TASKELL)_x86-64-linux.deb
 	$(APT_INSTALL) $(DOWNLOADS)/taskell-$(VERSION_TASKELL)_x86-64-linux.deb
 
+install-fish:
+	$(APT_ADD_REPO) ppa:fish-shell/release-3
+	$(APT_UPDATE)
+	$(APT_INSTALL) fish
+	curl -L https://get.oh-my.fish | fish
+	fish -c "omf install"
+
 install-zsh:
 	$(APT_INSTALL) zsh
 	sh -c "$$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
