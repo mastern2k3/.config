@@ -45,3 +45,5 @@
 
 *.spl
 *.sug
+
+!taskell.md
