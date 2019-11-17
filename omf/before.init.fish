@@ -73,6 +73,11 @@ if test -d "/snap/bin"
     set PATH $PATH "/snap/bin"
 end
 
+
+if command -v codium >/dev/null
+    alias code=codium
+end
+
 # git aliases
 alias glon='glola --author-date-order'
 alias gg="git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --all --author-date-order"
