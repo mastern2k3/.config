@@ -113,6 +113,10 @@ alias tmux='tmux -u'
 alias vi='nvim'
 alias rmr='rm -r'
 
+function atmx
+  alacritty -e tmux -u new-session -A -s $argv > /dev/null & disown
+end
+
 function take
   mkdir -p $argv && cd $argv
 end
