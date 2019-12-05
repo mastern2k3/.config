@@ -81,6 +81,7 @@ install-vscodium:
 	$(APT_INSTALL) codium
 	codium --install-extension arcticicestudio.nord-visual-studio-code
 	codium --install-extension yzhang.markdown-all-in-one
+	codium --install-extension streetsidesoftware.code-spell-checker
 
 install-docker:
 	$(APT_INSTALL) docker.io
