@@ -113,6 +113,8 @@ alias tmux='tmux -u'
 alias vi='nvim'
 alias rmr='rm -r'
 
+abbr --add --global datei 'date -Isecond'
+
 function atmx
   alacritty -e tmux -u new-session -A -s $argv > /dev/null & disown
 end
