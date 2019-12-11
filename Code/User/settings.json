@@ -93,4 +93,5 @@
     "markdown-preview-enhanced.revealjsTheme": "league.css",
     "markdown-preview-enhanced.mermaidTheme": "default",
     "gitlens.codeLens.enabled": false,
+    "python.envFile": "",
 }
