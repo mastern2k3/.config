@@ -114,6 +114,8 @@ alias vi='nvim'
 alias rmr='rm -r'
 
 abbr --add --global datei 'date -Isecond'
+abbr --add --global lzg lazygit
+abbr --add --global lzd lazydocker
 
 function atmx
   alacritty -e tmux -u new-session -A -s $argv > /dev/null & disown
