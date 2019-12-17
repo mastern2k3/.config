@@ -116,6 +116,7 @@ alias rmr='rm -r'
 abbr --add --global datei 'date -Isecond'
 abbr --add --global lzg lazygit
 abbr --add --global lzd lazydocker
+abbr --add --global c 'bat -p'
 
 function atmx
   alacritty -e tmux -u new-session -A -s $argv > /dev/null & disown
@@ -129,8 +130,12 @@ end
 set VIRTUAL_ENV_DISABLE_PROMPT 1
 
 # adaptation so tmux will display current dir as title
-function fish_title
+if test ! -z "$TMUX"
+
+  function fish_title
     printf '\ek%s\e\\' (status current-command) (prompt_pwd)
+  end
+
 end
 
 # display neofetch output instead of normal fish greeting
