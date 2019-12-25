@@ -101,9 +101,8 @@ alias wch='watch -n 1'
 alias hig='history | grep'
 alias gitnitz='git config user.email "nitzan.zada@gmail.com" && git config user.name "Nitzan Zada"'
 alias gitnitzhalo='git config user.email "nitzan@halo-digital.com" && git config user.name "Nitzan Zada"'
-alias gomtm='git fetch . origin/master:master'
-alias ynk='yank-cli -- xsel -b'
-alias ynkk=yank-cli
+abbr --add --global gomtm 'git fetch . origin/master:master'
+
 alias l='exa --time-style iso -la --git --group-directories-first --icons'
 alias ls='exa --time-style iso -a --git --group-directories-first --icons'
 alias tk=taskell
@@ -111,7 +110,7 @@ alias tk=taskell
 alias life='taskell /keybase/private/mastern2k3/notes/life.md'
 alias tmux='tmux -u'
 alias vi='nvim'
-alias rmr='rm -r'
+abbr --add --global rmr 'rm -r'
 
 abbr --add --global datei 'date -Isecond'
 abbr --add --global lzg lazygit
