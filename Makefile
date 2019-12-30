@@ -19,6 +19,11 @@ home-bin:
 home-projects:
 	mkdir -p $(HOME)/Projects
 
+install-ansible:
+	$(APT_ADD_REPO) ppa:ansible/ansible
+	$(APT_UPDATE)
+	$(APT_INSTALL) lazygit
+
 install-lazygit:
 	$(APT_ADD_REPO) ppa:lazygit-team/release
 	$(APT_UPDATE)
@@ -51,11 +56,6 @@ install-fish:
 	$(APT_INSTALL) fish
 	curl -L https://get.oh-my.fish | fish
 	fish -c "omf install"
-
-install-zsh:
-	$(APT_INSTALL) zsh
-	sh -c "$$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-	ln -s -f $(DIR)/zsh/.zshrc $(HOME)
 
 install-fonts:
 	sudo cp $(DIR)/alacritty/fonts/* /usr/local/share/fonts
