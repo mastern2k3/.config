@@ -116,6 +116,7 @@ abbr --add --global datei 'date -Isecond'
 abbr --add --global lzg lazygit
 abbr --add --global lzd lazydocker
 abbr --add --global c 'bat -p'
+abbr --add --global mk make
 
 function atmx
   alacritty -e tmux -u new-session -A -s $argv > /dev/null & disown
