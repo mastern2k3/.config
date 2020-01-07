@@ -96,4 +96,6 @@
     "markdown-preview-enhanced.mermaidTheme": "default",
     "gitlens.codeLens.enabled": false,
     "python.envFile": "",
+    "markdown.marp.exportType": "html",
+    "markdown.marp.breaks": "off",
 }
