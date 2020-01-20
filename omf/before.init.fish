@@ -93,7 +93,6 @@ alias tid='open_command https://trello.com/b/tZaiZ8ln/ideas'
 # misc aliases
 alias untargz='tar xzvf'
 alias whoport='sudo lsof -i -P -n | grep LISTEN'
-alias xo=open_command
 alias btt=bat
 alias bt='bat --paging=never'
 alias pls=sudo
@@ -110,6 +109,11 @@ alias tk=taskell
 alias life='taskell /keybase/private/mastern2k3/notes/life.md'
 alias tmux='tmux -u'
 alias vi='nvim'
+
+abbr --add --global xo xdg-open
+
+abbr --add --global ping8 'ping 8.8.8.8'
+
 abbr --add --global rmr 'rm -r'
 
 abbr --add --global datei 'date -Isecond'
@@ -117,6 +121,13 @@ abbr --add --global lzg lazygit
 abbr --add --global lzd lazydocker
 abbr --add --global c 'bat -p'
 abbr --add --global mk make
+
+abbr --add --global d 'docker'
+abbr --add --global dps 'docker ps --format "table {{.Names}}\t{{.Image}}\t{{.Status}}"'
+abbr --add --global k 'kubectl'
+
+abbr --add --global txh 'tmux splitw -h'
+abbr --add --global txv 'tmux splitw'
 
 function atmx
   alacritty -e tmux -u new-session -A -s $argv > /dev/null & disown

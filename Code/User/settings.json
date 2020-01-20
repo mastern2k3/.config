@@ -6,6 +6,7 @@
     "breadcrumbs.enabled": true,
     "window.titleBarStyle": "custom",
     "cSpell.userWords": [
+        "Autowired",
         "Nitzan",
         "ODBC",
         "Zada",
@@ -53,6 +54,7 @@
         "resolving",
         "return",
         "runtime",
+        "runtimes",
         "s",
         "size",
         "std",
@@ -96,6 +98,7 @@
     "markdown-preview-enhanced.mermaidTheme": "default",
     "gitlens.codeLens.enabled": false,
     "python.envFile": "",
+    "workbench.editor.showTabs": false,
     "markdown.marp.exportType": "html",
     "markdown.marp.breaks": "off",
 }
