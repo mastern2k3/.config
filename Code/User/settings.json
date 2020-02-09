@@ -30,6 +30,7 @@
         "file",
         "filepath",
         "fnv",
+        "globbing",
         "hash",
         "if",
         "in",

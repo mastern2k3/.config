@@ -95,7 +95,6 @@ alias untargz='tar xzvf'
 alias whoport='sudo lsof -i -P -n | grep LISTEN'
 alias btt=bat
 alias bt='bat --paging=never'
-alias pls=sudo
 alias wch='watch -n 1'
 alias hig='history | grep'
 alias gitnitz='git config user.email "nitzan.zada@gmail.com" && git config user.name "Nitzan Zada"'
@@ -112,6 +111,8 @@ alias vi='nvim'
 
 abbr --add --global xo xdg-open
 
+abbr --add --global pls sudo
+
 abbr --add --global ping8 'ping 8.8.8.8'
 
 abbr --add --global rmr 'rm -r'
@@ -121,6 +122,8 @@ abbr --add --global lzg lazygit
 abbr --add --global lzd lazydocker
 abbr --add --global c 'bat -p'
 abbr --add --global mk make
+abbr --add --global pick "nnn -p - | tr -d '\n' | xclip -selection clipboard"
+abbr --add --global clip "xclip -selection clipboard"
 
 abbr --add --global d 'docker'
 abbr --add --global dps 'docker ps --format "table {{.Names}}\t{{.Image}}\t{{.Status}}"'
