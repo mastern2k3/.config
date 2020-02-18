@@ -1,6 +1,9 @@
 // Place your key bindings in this file to override the defaults
 [
-    { "key": "ctrl+tab", "command": "workbench.action.openPreviousEditorFromHistory" },
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.openPreviousEditorFromHistory",
+    },
     {
         "key": "ctrl+tab",
         "command": "workbench.action.quickOpenNavigateNext",
@@ -10,5 +13,13 @@
         "key": "ctrl+shift+f",
         "command": "search.action.focusSearchList",
         "when": "searchViewletFocus"
-    }
+    },
+    {
+        "key": "alt+left",
+        "command": "workbench.action.navigateBack"
+    },
+    {
+        "key": "ctrl+alt+-",
+        "command": "-workbench.action.navigateBack"
+    },
 ]

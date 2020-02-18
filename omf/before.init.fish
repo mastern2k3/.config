@@ -136,6 +136,10 @@ function atmx
   alacritty -e tmux -u new-session -A -s $argv > /dev/null & disown
 end
 
+function bbox
+  google-chrome --app="http://$argv" > /dev/null 2>&1 & disown
+end
+
 function take
   mkdir -p $argv && cd $argv
 end

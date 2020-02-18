@@ -4,7 +4,6 @@
     "workbench.colorTheme": "Nord",
     "window.zoomLevel": 1,
     "breadcrumbs.enabled": true,
-    "window.titleBarStyle": "custom",
     "cSpell.userWords": [
         "Autowired",
         "Nitzan",
@@ -99,7 +98,11 @@
     "markdown-preview-enhanced.mermaidTheme": "default",
     "gitlens.codeLens.enabled": false,
     "python.envFile": "",
+    "problems.showCurrentInStatus": true,
     "workbench.editor.showTabs": false,
+    "window.menuBarVisibility": "toggle",
     "markdown.marp.exportType": "html",
     "markdown.marp.breaks": "off",
+    "workbench.activityBar.visible": false,
+    "editor.folding": false,
 }
