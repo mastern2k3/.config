@@ -140,6 +140,10 @@ function bbox
   google-chrome --app="http://$argv" > /dev/null 2>&1 & disown
 end
 
+function iname
+  i3-msg rename workspace to (i3-msg -t get_workspaces | jq 'map(select(.focused))[0].name' | string replace -r "(<span font_desc.*?>) (\d*)(.*?)(</span>)" "\$1 \$2: $argv \$4")
+end
+
 function take
   mkdir -p $argv && cd $argv
 end
