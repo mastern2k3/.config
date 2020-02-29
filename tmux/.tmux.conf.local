@@ -1,3 +1,4 @@
+# cat << EOF > /dev/null
 # https://github.com/gpakosz/.tmux
 # (‑●‑●)> dual licensed under the WTFPL v2 license and the MIT license,
 #         without any warranty.
@@ -297,3 +298,41 @@ set -g mouse on
 # move status line to top
 #set -g status-position top
 
+
+# -- urlview -------------------------------------------------------------------
+
+# bind U run "cut -c3- ~/.tmux.conf | sh -s _urlview #{pane_id}"
+
+bind u run "cut -c3- ~/.tmux.conf.local | sh -s _urlview_box #{pane_id}"
+
+# EOF
+#
+# # exit the script if any statement returns a non-true return value
+# set -e
+#
+# unset GREP_OPTIONS
+# export LC_NUMERIC=C
+#
+# if ! printf '' | sed -E 's///' 2>/dev/null; then
+#   if printf '' | sed -r 's///' 2>/dev/null; then
+#     sed () {
+#       n=$#; while [ "$n" -gt 0 ]; do arg=$1; shift; case $arg in -E*) arg=-r${arg#-E};; esac; set -- "$@" "$arg"; n=$(( n - 1 )); done
+#       command sed "$@"
+#     }
+#   fi
+# fi
+#
+# __newline='
+# '
+#
+# # _urlview() {
+# #   tmux capture-pane -J -S - -E - -b "urlview-$1" -t "$1"
+# #   tmux split-window "tmux show-buffer -b urlview-$1 | urlview || true; tmux delete-buffer -b urlview-$1"
+# # }
+#
+# _urlview_box() {
+#   tmux capture-pane -J -S - -E - -b "urlview-$1" -t "$1"
+#   tmux split-window "tmux show-buffer -b urlview-$1 | urlscan -c -H -r \"nohup google-chrome --app='{}' > /dev/null &\" || true; tmux delete-buffer -b urlview-$1"
+# }
+#
+# "$@"
