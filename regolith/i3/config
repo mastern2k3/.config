@@ -196,7 +196,8 @@ bindsym $mod+Shift+s exec systemctl suspend
 bindsym $mod+c exec gnome-control-center
 bindsym $mod+d exec gnome-control-center display
 bindsym $mod+w exec gnome-control-center wifi
-bindsym $mod+Shift+n exec nautilus
+# bindsym $mod+Shift+n exec nautilus
+bindsym $mod+Shift+n exec thunar
 bindsym $mod+n exec /usr/share/rofication/rofication-gui.py
 
 # i3-snapshot for load/save current layout
@@ -251,7 +252,8 @@ new_window pixel 1
 new_float pixel 1
 
 # Specify the distance between windows in pixels. (i3-gaps)
-gaps inner 5
+# gaps inner 5
+gaps inner 10
 gaps outer 0
 
 # Only enable gaps on a workspace when there is at least one container

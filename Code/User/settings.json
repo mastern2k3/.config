@@ -6,6 +6,7 @@
     "breadcrumbs.enabled": true,
     "cSpell.userWords": [
         "Autowired",
+        "Draggable",
         "Nitzan",
         "ODBC",
         "Zada",
@@ -105,4 +106,5 @@
     "markdown.marp.breaks": "off",
     "workbench.activityBar.visible": false,
     "editor.folding": false,
+    "files.defaultLanguage": "markdown",
 }
