@@ -128,9 +128,11 @@ abbr --add --global clip "xclip -selection clipboard"
 abbr --add --global d 'docker'
 abbr --add --global dps 'docker ps --format "table {{.Names}}\t{{.Image}}\t{{.Status}}"'
 abbr --add --global k 'kubectl'
+abbr --add --global kns 'kubectl config set-context --current --namespace'
 
 abbr --add --global txh 'tmux splitw -h'
 abbr --add --global txv 'tmux splitw'
+abbr --add --global movew 'tmux movew -t '
 
 function atmx
   alacritty -e tmux -u new-session -A -s $argv > /dev/null & disown

@@ -107,4 +107,7 @@
     "workbench.activityBar.visible": false,
     "editor.folding": false,
     "files.defaultLanguage": "markdown",
+    "editor.minimap.enabled": false,
+    "editor.wordWrap": "on",
+    "editor.smoothScrolling": true,
 }
