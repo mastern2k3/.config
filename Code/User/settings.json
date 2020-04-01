@@ -93,10 +93,6 @@
     "editor.fontLigatures": true,
     "editor.renderWhitespace": "all",
     "diffEditor.ignoreTrimWhitespace": false,
-    "markdown-preview-enhanced.frontMatterRenderingOption": "code block",
-    "markdown-preview-enhanced.previewTheme": "github-dark.css",
-    "markdown-preview-enhanced.revealjsTheme": "league.css",
-    "markdown-preview-enhanced.mermaidTheme": "default",
     "gitlens.codeLens.enabled": false,
     "python.envFile": "",
     "problems.showCurrentInStatus": true,
@@ -110,4 +106,16 @@
     "editor.minimap.enabled": false,
     "editor.wordWrap": "on",
     "editor.smoothScrolling": true,
+
+    "terminal.integrated.fontFamily": "Hack Nerd Font Mono",
+    "terminal.integrated.shell.linux": "/usr/bin/tmux",
+    "terminal.integrated.shellArgs.linux": [
+        "-u"
+    ],
+    "[markdown]": {
+        "editor.rulers": [80]
+    },
+    "[python]": {
+        "editor.rulers": [100]
+    },
 }

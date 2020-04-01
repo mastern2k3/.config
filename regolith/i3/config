@@ -129,8 +129,12 @@ bindsym $mod+Ctrl+8 workspace number $ws18
 bindsym $mod+Ctrl+9 workspace number $ws19
 
 # cycle across workspaces
-bindsym $mod+Tab workspace next
+# bindsym $mod+Tab workspace next
+bindsym $mod+Tab workspace back_and_forth
 bindsym $mod+Shift+Tab workspace prev
+
+bindsym $mod+Prior workspace prev
+bindsym $mod+Next workspace next
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
@@ -330,7 +334,8 @@ bar {
   font $i3-wm.bar.font
   separator_symbol " "
   status_command i3xrocks -c $i3xrocks_config
-  tray_output none
+  tray_output primary
+  # tray_output none
   strip_workspace_numbers yes
 
   colors {
