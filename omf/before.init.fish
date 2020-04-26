@@ -87,8 +87,8 @@ alias ggpull='git pull origin (git rev-parse --abbrev-ref HEAD)'
 alias ggpush='git push origin (git rev-parse --abbrev-ref HEAD)'
 
 # bookmarks
-alias ttom='open_command https://trello.com/b/SbyBrJxQ'
-alias tid='open_command https://trello.com/b/tZaiZ8ln/ideas'
+alias ttom='bbox trello.com/b/SbyBrJxQ'
+alias tid='bbox trello.com/b/tZaiZ8ln/ideas'
 
 # misc aliases
 alias untargz='tar xzvf'
@@ -122,13 +122,14 @@ abbr --add --global lzg lazygit
 abbr --add --global lzd lazydocker
 abbr --add --global c 'bat -p'
 abbr --add --global mk make
-abbr --add --global pick "nnn -p - | tr -d '\n' | xclip -selection clipboard"
+abbr --add --global pick "nnn -p - | tail -n 1 | tr -d '\n' | xclip -selection clipboard"
 abbr --add --global clip "xclip -selection clipboard"
 
 abbr --add --global d 'docker'
 abbr --add --global dps 'docker ps --format "table {{.Names}}\t{{.Image}}\t{{.Status}}"'
 abbr --add --global k 'kubectl'
 abbr --add --global kns 'kubectl config set-context --current --namespace'
+abbr --add --global knn "kubectl config view -o jsonpath='{.contexts[0].context.namespace}'"
 
 abbr --add --global txh 'tmux splitw -h'
 abbr --add --global txv 'tmux splitw'

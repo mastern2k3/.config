@@ -9,6 +9,12 @@
         "command": "workbench.action.quickOpenNavigateNext",
         "when": "inQuickOpen"
     },
+
+    {
+        "key": "ctrl+shift+q",
+        "command": "workbench.action.toggleMaximizedPanel"
+    },
+
     {
         "key": "ctrl+shift+f",
         "command": "search.action.focusSearchList",
