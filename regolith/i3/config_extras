@@ -1,0 +1,15 @@
+
+
+###############################################################
+# Special Personal additions for regolith's i3 configurations #
+###############################################################
+
+bindsym $mod+Shift+v exec codium -n
+
+bindsym $mod+Tab workspace back_and_forth
+bindsym $mod+Shift+Tab workspace prev
+
+bindsym $mod+Prior workspace prev
+bindsym $mod+Next workspace next
+
+for_window [class="Xviewer"] floating enable

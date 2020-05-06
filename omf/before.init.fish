@@ -57,6 +57,10 @@ if test -d $HOME"/.sdkman/bin"
     set PATH $PATH $HOME"/.sdkman/bin"
 end
 
+if test -d $HOME"/.cargo/bin"
+    set PATH $PATH $HOME"/.cargo/bin"
+end
+
 if test -d "/usr/local/go/bin"
     set PATH $PATH "/usr/local/go/bin"
 end
