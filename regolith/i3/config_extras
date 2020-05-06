@@ -13,3 +13,5 @@ bindsym $mod+Prior workspace prev
 bindsym $mod+Next workspace next
 
 for_window [class="Xviewer"] floating enable
+
+bindsym $mod+Ctrl+n resize set 1366 768; move position center
