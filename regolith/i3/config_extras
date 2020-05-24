@@ -16,3 +16,6 @@ for_window [class="Xviewer"] floating enable
 
 bindsym $mod+Ctrl+n resize set 1366 768; move position center
 bindsym $mod+F2 exec i3-input -F 'exec fish -c "iname %s"' -P 'name: ' -f $i3-wm.font
+
+# rofi menu from codes.md
+bindsym $mod+F3 exec fish -c 'fish -c (cat ~/codes.md | rofi -dmenu)'
