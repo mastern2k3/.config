@@ -5,13 +5,17 @@
     "window.zoomLevel": 1,
     "breadcrumbs.enabled": true,
     "cSpell.userWords": [
+        "Arango",
         "Autowired",
         "Draggable",
+        "Minikube",
         "Nitzan",
         "ODBC",
         "Zada",
         "a",
+        "acking",
         "base",
+        "basepath",
         "byte",
         "bytes",
         "cached",
@@ -30,6 +34,7 @@
         "file",
         "filepath",
         "fnv",
+        "fullname",
         "globbing",
         "grpc",
         "hash",
@@ -40,6 +45,7 @@
         "js",
         "json",
         "kibana",
+        "kubernetes",
         "logger",
         "make",
         "marshal",
@@ -68,9 +74,11 @@
         "sum",
         "switch",
         "to",
+        "tolerations",
         "trim",
         "type",
         "u",
+        "unacked",
         "unrecognized",
         "var",
         "vuex",
@@ -115,10 +123,30 @@
     "terminal.integrated.shellArgs.linux": [
         "-u"
     ],
+    "[makefile]": {
+        "editor.tabSize": 4
+    },
     "[markdown]": {
         "editor.rulers": [80]
     },
     "[python]": {
         "editor.rulers": [100]
     },
+    "files.watcherExclude": {
+        "**/.git/*/**": true,
+        "**/venv/*/**": true,
+        "**/.halo-test/*/**": true,
+        "**/node_modules/*/**": true,
+        "**/vendor/*/**": true,
+        "**/.import/*/**": true,
+        "**/.mono/*/**": true,
+    },
+    "files.exclude": {
+        "**/.halo-test": true
+    },
+    "python.linting.ignorePatterns": [
+        ".vscode/*.py",
+        "**/site-packages/**/*.py",
+        "**/.halo-test/**/*"
+    ],
 }

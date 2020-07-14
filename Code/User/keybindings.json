@@ -62,4 +62,14 @@
         "key": "ctrl+shift+-",
         "command": "-workbench.action.navigateForward"
     },
+    {
+        "key": "ctrl+pagedown",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+pageup",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
+    },
 ]

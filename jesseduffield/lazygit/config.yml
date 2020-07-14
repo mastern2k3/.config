@@ -1,2 +1,4 @@
 reporting: "off"
 startuppopupversion: 1
+os:
+  openCommand: 'fish -c "code -r {{filename}}"'

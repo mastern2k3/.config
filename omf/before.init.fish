@@ -40,6 +40,13 @@ set fish_pager_color_description $nord10
 set fish_pager_color_progress $nord12
 set fish_pager_color_secondary $nord1
 
+# pure theme customizations
+
+set pure_color_mute magenta
+set pure_color_jobs yellow
+
+set pure_show_jobs true
+
 # set PATH so it includes user's private bin if it exists
 if test -d $HOME"/bin"
     set PATH $PATH $HOME"/bin"
@@ -130,10 +137,14 @@ abbr --add --global pick "nnn -p - | tail -n 1 | tr -d '\n' | xclip -selection c
 abbr --add --global clip "xclip -selection clipboard"
 
 abbr --add --global d 'docker'
-abbr --add --global dps 'docker ps --format "table {{.Names}}\t{{.Image}}\t{{.Status}}"'
+abbr --add --global dps 'docker ps -a --format "table {{.Names}}\t{{.Image}}\t{{.Status}}"'
 abbr --add --global k 'kubectl'
 abbr --add --global kns 'kubectl config set-context --current --namespace'
 abbr --add --global knn "kubectl config view -o jsonpath='{.contexts[0].context.namespace}'"
+abbr --add --global kg "kubectl get"
+abbr --add --global kgp "kubectl get pods"
+abbr --add --global kgs "kubectl get svc"
+abbr --add --global kux "kubectl config use-context"
 
 abbr --add --global txh 'tmux splitw -h'
 abbr --add --global txv 'tmux splitw'
