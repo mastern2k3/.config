@@ -52,3 +52,6 @@
 *.sug
 
 !taskell.md
+
+!boot-logo
+!boot-logo/**/*

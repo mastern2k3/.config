@@ -93,3 +93,6 @@ regolith-i3:
 	cp /etc/regolith/i3/config $(DIR)/regolith/i3/config
 	cat $(DIR)/regolith/i3/config_extras >> $(DIR)/regolith/i3/config
 
+apt-repos:
+	$(APT_ADD_REPO) ppa:mmstick76/alacritty
+

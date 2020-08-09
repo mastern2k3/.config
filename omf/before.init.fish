@@ -52,6 +52,10 @@ if test -d $HOME"/bin"
     set PATH $PATH $HOME"/bin"
 end
 
+if test -d $HOME"/.config/bin"
+    set PATH $PATH $HOME"/.config/bin"
+end
+
 if test -d $HOME"/.local/bin"
     set PATH $PATH $HOME"/.local/bin"
 end
@@ -168,6 +172,7 @@ end
 
 # disable python venv "(venv)" prompt since agnoster
 set VIRTUAL_ENV_DISABLE_PROMPT 1
+export FZF_DEFAULT_OPTS='--height 40%  --preview \'bat --color=always -p {}\' --preview-window right:60%'
 
 # adaptation so tmux will display current dir as title
 if test ! -z "$TMUX"
@@ -180,5 +185,5 @@ end
 
 # display neofetch output instead of normal fish greeting
 function fish_greeting
-  neofetch
+  pfetch
 end

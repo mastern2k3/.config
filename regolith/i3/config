@@ -476,6 +476,7 @@ set_from_resource $i3-wm.bar.status_command i3-wm.bar.status_command i3xrocks -u
 
 # The bar configuration
 bar {
+
   position $i3-wm.bar.position
   font $i3-wm.bar.font
   separator_symbol $i3-wm.bar.separator
@@ -483,7 +484,11 @@ bar {
   tray_output $i3-wm.bar.trayoutput
   strip_workspace_numbers $i3-wm.bar.stripworkspacenumbers
 
+  wheel_up_cmd nop
+  wheel_down_cmd nop
+
   colors {
+
       background $i3-wm.bar.background.color
       statusline $i3-wm.bar.statusline.color
       separator  $i3-wm.bar.separator.color
