@@ -95,4 +95,4 @@ regolith-i3:
 
 apt-repos:
 	$(APT_ADD_REPO) ppa:mmstick76/alacritty
-
+	$(APT_ADD_REPO) ppa:lazygit-team/release

@@ -133,12 +133,13 @@ abbr --add --global ping8 'ping 8.8.8.8'
 abbr --add --global rmr 'rm -r'
 
 abbr --add --global datei 'date -Isecond'
-abbr --add --global lzg lazygit
+abbr --add --global lg lazygit
 abbr --add --global lzd lazydocker
 abbr --add --global c 'bat -p'
 abbr --add --global mk make
 abbr --add --global pick "nnn -p - | tail -n 1 | tr -d '\n' | xclip -selection clipboard"
 abbr --add --global clip "xclip -selection clipboard"
+abbr --add --global ff 'fzf |'
 
 abbr --add --global d 'docker'
 abbr --add --global dps 'docker ps -a --format "table {{.Names}}\t{{.Image}}\t{{.Status}}"'
