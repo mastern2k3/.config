@@ -149,7 +149,11 @@ abbr --add --global knn "kubectl config view -o jsonpath='{.contexts[0].context.
 abbr --add --global kg "kubectl get"
 abbr --add --global kgp "kubectl get pods"
 abbr --add --global kgs "kubectl get svc"
+abbr --add --global kgns "kubectl get ns"
 abbr --add --global kux "kubectl config use-context"
+abbr --add --global kcc "kubectl config current-context"
+abbr --add --global kdp "kubectl describe pod"
+
 
 abbr --add --global txh 'tmux splitw -h'
 abbr --add --global txv 'tmux splitw'
@@ -169,6 +173,15 @@ end
 
 function take
   mkdir -p $argv && cd $argv
+end
+
+function __fish_prepend_watch --description "Prepend 'sudo ' to the beginning of the current commandline"
+    set -l cmd (commandline -poc)
+    if test "$cmd[1]" != "watch"
+        commandline -C 0
+        commandline -i "watch "
+        commandline -f end-of-line
+    end
 end
 
 # disable python venv "(venv)" prompt since agnoster
